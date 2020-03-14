@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">FoodOrder</string>
+    <string name="title_top">Top fragment</string>
+
+    <string-array name="pizzas">
+        <item>Diavolo</item>
+        <item>Funghi</item>
+    </string-array>
+
+    <string-array name="pasta">
+        <item>Spaghetti Bolognese</item>
+        <item>Lasagne</item>
+    </string-array>
+
+    <string-array name="titles">
+        <item>Home</item>
+        <item>Pizzas</item>
+        <item>Pasta</item>
+    </string-array>
 </resources>
+
+
