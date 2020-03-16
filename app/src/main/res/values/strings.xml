@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">FoodOrder</string>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bd7da5621287237c3edcef56802617f9eea71cef
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

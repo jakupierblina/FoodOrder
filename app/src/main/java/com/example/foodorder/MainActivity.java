@@ -8,8 +8,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 public class MainActivity extends AppCompatActivity
 {
+=======
+public class MainActivity extends AppCompatActivity {
+>>>>>>> bd7da5621287237c3edcef56802617f9eea71cef
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

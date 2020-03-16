@@ -8,8 +8,15 @@ import android.view.ViewGroup;
 
 import com.example.foodorder.R;
 
+<<<<<<< HEAD
 public class PizzaFragment extends Fragment
 {
+=======
+
+public class PizzaFragment extends Fragment {
+
+
+>>>>>>> bd7da5621287237c3edcef56802617f9eea71cef
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
