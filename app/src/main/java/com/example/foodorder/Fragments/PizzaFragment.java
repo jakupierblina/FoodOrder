@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import com.example.foodorder.R;
 
 
-
 public class PizzaFragment extends Fragment {
 
 

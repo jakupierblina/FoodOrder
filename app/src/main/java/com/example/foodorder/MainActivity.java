@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+public class MainActivity extends AppCompatActivity
+{
+
+/***
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.my_options_menu, menu);
         return true;
     }
-
+**/
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id= item.getItemId();
