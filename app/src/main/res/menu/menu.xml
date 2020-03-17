@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/menu_mail"
+        android:icon="@drawable/mail"
+        android:title="mail"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/menu_close"
+        android:icon="@drawable/close"
+        android:title="close"
+        app:showAsAction="always"></item>
+</menu>
