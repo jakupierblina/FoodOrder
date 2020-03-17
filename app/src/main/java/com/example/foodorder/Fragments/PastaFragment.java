@@ -9,14 +9,10 @@ import android.view.ViewGroup;
 import com.example.foodorder.R;
 
 
-<<<<<<< HEAD
-public class PastaFragment extends Fragment
-{
-=======
+
+
 public class PastaFragment extends Fragment {
 
-
->>>>>>> bd7da5621287237c3edcef56802617f9eea71cef
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

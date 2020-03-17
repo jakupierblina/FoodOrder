@@ -10,11 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-<<<<<<< HEAD
         android:text="Pasta Menu"
-=======
-        android:text="Pasta Fragment"
->>>>>>> bd7da5621287237c3edcef56802617f9eea71cef
         android:textSize="50sp"
         android:gravity="center"/>
 
