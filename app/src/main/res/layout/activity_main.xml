@@ -21,7 +21,11 @@
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:buttonGravity="top"
-        tools:visibility="visible" />
+        tools:visibility="visible"
+        android:layout_marginLeft="-2dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="-1dp" />
 
     <TextView
         android:id="@+id/title"
