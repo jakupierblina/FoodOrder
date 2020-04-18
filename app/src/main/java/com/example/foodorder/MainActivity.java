@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -16,11 +17,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
-
-public class MainActivity extends AppCompatActivity
-{
-
-/***
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,10 +26,10 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.my_options_menu, menu);
+        inflater.inflate(R.menu.menu, menu);
         return true;
     }
-**/
+/**
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id= item.getItemId();
@@ -48,4 +44,5 @@ public class MainActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
+ **/
 }
