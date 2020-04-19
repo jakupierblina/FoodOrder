@@ -3,15 +3,289 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.PastaFragment"
-    android:background="#ba160c">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/background_light"
+    tools:context=".Fragments.PastaFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/pizzamenu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:singleLine="false"
         android:text="Pasta Menu"
-        android:textSize="50sp"
-        android:gravity="center"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cardview1"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="30dp"
+
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ItalianPizza"
+            android:layout_width="137dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@mipmap/ic_launcherpasta4"
+            tools:ignore="MissingConstraints,VectorDrawableCompat"
+            tools:layout_editor_absoluteX="-2dp" />
+
+        <TextView
+            android:id="@+id/ItalianPizzainfo1"
+            android:layout_width="188dp"
+            android:layout_height="27dp"
+            android:background="#FFFFFF"
+            android:text="Primavera Pasta"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="Carrots, Peeled, Squash Bell pepper"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="43dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$7"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="90dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="68dp"
+            android:layout_height="36dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Select"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="274dp"
+            tools:layout_editor_absoluteY="90dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cardview2"
+        android:layout_width="352dp"
+        android:layout_height="132dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ChicagoPizza"
+            android:layout_width="131dp"
+            android:layout_height="131dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@mipmap/ic_launcherpasta1_foreground"
+            tools:ignore="MissingConstraints,VectorDrawableCompat"
+            tools:layout_editor_absoluteX="-2dp" />
+
+        <TextView
+            android:id="@+id/ItalianPizzainfo2"
+            android:layout_width="188dp"
+            android:layout_height="27dp"
+            android:background="#FFFFFF"
+            android:text="Italian Pasta"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="180dp"
+            android:layout_height="42dp"
+            android:text="Dried spaghetti, Tomato Sausage, Garlic cloves"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="43dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$5"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="97dp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="68dp"
+            android:layout_height="36dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Select"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="274dp"
+            tools:layout_editor_absoluteY="97dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cardview3"
+        android:layout_width="352dp"
+        android:layout_height="132dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="30dp"
+
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/ChickenPizza"
+            android:layout_width="131dp"
+            android:layout_height="131dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@mipmap/ic_launcherpasta2_round"
+            tools:ignore="MissingConstraints,VectorDrawableCompat"
+            tools:layout_editor_absoluteX="-2dp" />
+
+        <TextView
+            android:id="@+id/ItalianPizzainfo3"
+            android:layout_width="188dp"
+            android:layout_height="27dp"
+            android:background="#FFFFFF"
+            android:text="White Sauce Pasta"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="Red chilli flakes, Sauce  Chopped parsley"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="43dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$8"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="97dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="68dp"
+            android:layout_height="36dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Select"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="274dp"
+            tools:layout_editor_absoluteY="96dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cardview4"
+        android:layout_width="352dp"
+        android:layout_height="132dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="30dp"
+
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/MargheritaPizza"
+            android:layout_width="131dp"
+            android:layout_height="131dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@mipmap/ic_launcherpasta3_round"
+            tools:ignore="MissingConstraints,VectorDrawableCompat"
+            tools:layout_editor_absoluteX="-2dp" />
+
+        <TextView
+            android:id="@+id/ItalianPizzainfo4"
+            android:layout_width="188dp"
+            android:layout_height="27dp"
+            android:background="#FFFFFF"
+            android:text="Basil Pasta"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="Basil, Italian sausage Cloves garlic, oregano"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="43dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$8"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="97dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="68dp"
+            android:layout_height="36dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Select"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="274dp"
+            tools:layout_editor_absoluteY="98dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
 
 </FrameLayout>
