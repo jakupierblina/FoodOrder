@@ -1,6 +1,6 @@
 package com.example.foodorder;
 
-import android.app.Activity;
+import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView drawerList;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
+    private int currentPosition = 0;
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
 
@@ -47,10 +48,15 @@ public class MainActivity extends AppCompatActivity {
         drawerList = (ListView) findViewById(R.id.drawer);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
+
         drawerList.setAdapter(new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_activated_1, titles));
         drawerList.setOnItemClickListener(new DrawerItemClickListener());
-        if (savedInstanceState == null) {
+
+        if (savedInstanceState != null) {
+            currentPosition = savedInstanceState.getInt("position");
+            setActionBarTitle(currentPosition);
+        }else{
             selectItem(0);
         }
 
@@ -71,7 +77,30 @@ public class MainActivity extends AppCompatActivity {
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
 
-    }
+        getFragmentManager().addOnBackStackChangedListener(
+                new FragmentManager.OnBackStackChangedListener() {
+                    public void onBackStackChanged() {
+                        FragmentManager fragMan = getFragmentManager();
+                        Fragment fragment = fragMan.findFragmentByTag("visible_fragment");
+                        if (fragment instanceof TopFragment) {
+                            currentPosition = 0;
+                        }
+                        if (fragment instanceof PizzaFragment) {
+                            currentPosition = 1;
+                        }
+
+                        if (fragment instanceof PastaFragment) {
+                            currentPosition = 2;
+                        }
+                        /***
+                        if (fragment instanceof StoresFragment) {
+                            currentPosition = 3;
+                        }*****/
+                        setActionBarTitle(currentPosition);
+                        drawerList.setItemChecked(currentPosition, true);
+                    }
+                };
+            }
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
@@ -119,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void selectItem(int position) {
         Fragment fragment;
+        currentPosition = position;
         switch (position) {
             case 1:
                 fragment = new PizzaFragment();
@@ -134,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.replace(R.id.content_frame, fragment);
+        ft.replace(R.id.content_frame, "visible_fragment"););
         ft.addToBackStack(null);
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         ft.commit();
@@ -142,6 +172,11 @@ public class MainActivity extends AppCompatActivity {
         //Close drawer
         drawerLayout.closeDrawer(drawerList);
 
+    }
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("position", currentPosition);
     }
 
     private void setActionBarTitle(int position) {
