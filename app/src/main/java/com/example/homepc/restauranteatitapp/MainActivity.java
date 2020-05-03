@@ -157,34 +157,10 @@ public class MainActivity extends AppCompatActivity
         }
         else if(id == R.id.order_details_drawer ){
             Toast.makeText(getApplicationContext(),"Order Detalis",Toast.LENGTH_SHORT).show();
-
-
-            Cursor check ;
-            check = mydb.Get_OrderDetails() ;
-
-            if(check!=null && check.getCount()>0)
-            {      Intent intent = new Intent(getApplicationContext(), OrderPage.class);
-                startActivity(intent);
-            }
-            else  {Toast.makeText(getApplicationContext(),"No details found because you didn't order something...",Toast.LENGTH_SHORT).show();}
         }
         else if(id == R.id.submit_order ){
             Toast.makeText(getApplicationContext(),"Submit",Toast.LENGTH_SHORT).show();
-
-
-            Cursor check ;
-            check = mydb.Get_OrderDetails() ;
-
-            if(check!=null && check.getCount()>0)
-                {   Submit_Order fragment = new Submit_Order();
-                android.support.v4.app.FragmentTransaction fragmentTransaction =
-                        getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.Fragment_container, fragment);
-                fragmentTransaction.commit();
-
-            }
-            else  {Toast.makeText(getApplicationContext(),"Sorry, You don't order anything...",Toast.LENGTH_SHORT).show();}
-        }
+         }
 
         else if(id == R.id.log_out ){
             Toast.makeText(getApplicationContext(),"Log OUT",Toast.LENGTH_SHORT).show();
