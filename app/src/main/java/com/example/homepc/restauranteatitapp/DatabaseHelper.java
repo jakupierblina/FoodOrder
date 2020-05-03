@@ -8,10 +8,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
-/**
- * Created by HomePC on 1/9/2018.
- */
-
 public class DatabaseHelper extends SQLiteOpenHelper{
     public static final String DATABASE_NAME = "EatItData";
 
@@ -81,7 +77,6 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         return cursor;
 
     }
-
                                    //ORDER DETAILS DATABASE WORK
 
     public boolean Add_to_Cart(String Name,String Quantity,String Price){
@@ -93,9 +88,6 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         double check = db.insert(TABLE_NAME_2,null,contentValues1);
         if(check == -1) return false;
         else return true;
-
-
-
 
     }
     public Cursor Get_OrderDetails() {
@@ -113,7 +105,5 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("delete from "+ TABLE_NAME_2);
     }
-
-
 
 }
