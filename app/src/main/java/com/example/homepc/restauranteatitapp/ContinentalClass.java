@@ -1,8 +1,5 @@
 package com.example.homepc.restauranteatitapp;
 
-/**
- * Created by HomePC on 1/9/2018.
- */
 
 public class ContinentalClass {
     private String Itemname;
@@ -16,9 +13,6 @@ public class ContinentalClass {
         Itemprice = iPrice;
         Itemimage = iImage;
         Itemquantity = iquantity;
-
-
-
     }
     public String getItemName() {
         return Itemname;
@@ -30,6 +24,4 @@ public class ContinentalClass {
 
     public String getItemquantity() {return Itemquantity;}
 
-
 }
-
