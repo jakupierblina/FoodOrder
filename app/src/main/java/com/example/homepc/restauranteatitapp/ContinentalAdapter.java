@@ -12,9 +12,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-/**
- * Created by HomePC on 1/9/2018.
- */
 
 public class ContinentalAdapter extends ArrayAdapter<ContinentalClass> {
 
@@ -72,8 +69,6 @@ public class ContinentalAdapter extends ArrayAdapter<ContinentalClass> {
             }
         });
 
-
-
         Contihold = currentcontifood.getItemquantity();
         Contivalue = Integer.parseInt(Contihold);
         Contiquantity = Contivalue + Contiquantity;
@@ -90,104 +85,9 @@ public class ContinentalAdapter extends ArrayAdapter<ContinentalClass> {
             public void onClick(View view) {
 
                 //cart_btn.setEnabled(false);
-                Contipos = (Integer)view.getTag();
-                if(Contiquantity != 0) { //if quan < 0 or equals to 0
-                    if (Contipos == 0) {
-                        boolean isinserted = mydb.Add_to_Cart("Salsa",String.valueOf(Contiquantity),String.valueOf(650*Contiquantity));
-                        if (isinserted)
-                        {
-                            int price = 1; //price * quantity = total price
-                            Contiorder_details[i] = "Id " + Conticounter + " Salsa Price Rs " + 650 * Contiquantity + " ";
-                            Conticounter++;  //var use for no of items order
-                            i++;  //var uses to store data in array */
-                            Contiquantity = 0;  //holds the value for each item quantity*s/
-                            Toast.makeText(getContext(), "Order Added Successfully !", Toast.LENGTH_SHORT).show();
-                        }
-                        else
-                            Toast.makeText(getContext(), "Please, Try again", Toast.LENGTH_SHORT).show();
-
-
-
-
-                    }
-                    if (Contipos == 1) {
-                        boolean isinserted =  mydb.Add_to_Cart("Arabic Pizza",String.valueOf(Contiquantity),String.valueOf(1150*Contiquantity));
-                        if (isinserted)
-                        {
-                            int price = 1;
-                            Contiorder_details[i] = "Id " + Conticounter + " Arabic Pizza Price Rs " + 1150 * Contiquantity + " ";
-                            Conticounter++;
-                            i++;
-                            Contiquantity = 0;
-                            Toast.makeText(getContext(), "Order Added Successfully !", Toast.LENGTH_SHORT).show();
-
-                        }
-                        else
-                            Toast.makeText(getContext(), "Please, Try again", Toast.LENGTH_SHORT).show();
-
-
-
-
-                    }
-                    if (Contipos == 2) {
-                        boolean isinserted = mydb.Add_to_Cart("Macaroni ",String.valueOf(Contiquantity),String.valueOf(250*Contiquantity));
-                        if (isinserted)
-                        {
-                            int price = 1;
-                            Contiorder_details[i] = "Id : " + Conticounter + " Macaroni Price Rs " + 250 * Contiquantity + " ";
-                            Conticounter++;
-                            i++;
-                            Contiquantity = 0;
-                            Toast.makeText(getContext(), "Order Added Successfully !", Toast.LENGTH_SHORT).show();
-
-                        }
-                        else
-                            Toast.makeText(getContext(), "Please, Try again", Toast.LENGTH_SHORT).show();
-
-
-
-
-
-                    }
-                    if (Contipos == 3) {
-
-                        boolean isinserted = mydb.Add_to_Cart("Pan Burger",String.valueOf(Contiquantity),String.valueOf(190*Contiquantity));
-                        if (isinserted)
-                        {
-                            int price = 1;
-                            Contiorder_details[i] = "Id " + Conticounter + " Pan Burger Price Rs " + 190 * Contiquantity + " ";
-                            Conticounter++;
-                            i++;
-                            Contiquantity = 0;
-                            Toast.makeText(getContext(), "Order Added Successfully !", Toast.LENGTH_SHORT).show();
-
-                        }
-                        else
-                            Toast.makeText(getContext(), "Please, Try again", Toast.LENGTH_SHORT).show();
-
-
-
-
-
-                    }
-
-
-                } else {  Toast.makeText(getContext(), "Quantity value can't be zero or lesser!!!", Toast.LENGTH_SHORT).show();
-
-                    int j = 0;
-                    Toast.makeText(getContext(), "" + Contiorder_details[j] + "\n" + Contiorder_details[j+1] + "\n"+ Contiorder_details[j+2] + "\n" + Contiorder_details[j+3], Toast.LENGTH_LONG).show();
-
-                }
-
-
-
-
-            }
+                Contipos = (Integer)view.getTag();    
         });
-
-
 
         return listItemView;
     }
-
 }
