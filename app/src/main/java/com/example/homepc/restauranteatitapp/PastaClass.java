@@ -1,16 +1,10 @@
 package com.example.homepc.restauranteatitapp;
 
-/**
- * Created by HomePC on 1/9/2018.
- */
-
 public class PastaClass {
     private String Itemname;
     private String Itemprice;
     private int Itemimage;
     public String Itemquantity;
-
-
 
     public PastaClass(String iName, String iPrice, int iImage, String iquantity)
     {
@@ -18,8 +12,6 @@ public class PastaClass {
         Itemprice = iPrice;
         Itemimage = iImage;
         Itemquantity = iquantity;
-
-
 
     }
     public String getItemName() {
@@ -32,5 +24,3 @@ public class PastaClass {
 
     public String getItemquantity() {return Itemquantity;}
 }
-
-
