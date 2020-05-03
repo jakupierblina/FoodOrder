@@ -79,14 +79,17 @@ public class ContinentalAdapter extends ArrayAdapter<ContinentalClass> {
         Button cart_btn = (Button) listItemView.findViewById(R.id.cart_btn);
         cart_btn.setTag(position);
 
-
         cart_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 //cart_btn.setEnabled(false);
-                Contipos = (Integer)view.getTag();    
+                Contipos = (Integer)view.getTag();
+
+
+            }
         });
+
 
         return listItemView;
     }
