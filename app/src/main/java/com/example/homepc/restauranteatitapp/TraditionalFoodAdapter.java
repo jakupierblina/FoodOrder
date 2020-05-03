@@ -16,11 +16,8 @@ import java.util.ArrayList;
 public class TraditionalFoodAdapter extends ArrayAdapter<TraditionalfoodClass> {
 
     int quantity = 0; int i = 0;
-    int value = 0; String hold = "";
-    int pos = 0, counter = 1;
-    String [] order_details = new String[1000];
+    int pos = 0;
     DatabaseHelper mydb;
-    String Number,Name,Quantity,Price = "";
 
 
     public TraditionalFoodAdapter(Activity context, ArrayList<TraditionalfoodClass> trad_food) {
@@ -50,29 +47,6 @@ public class TraditionalFoodAdapter extends ArrayAdapter<TraditionalfoodClass> {
         priceTextView.setText("Price " + currenttradfood.getItemPrice() );
 
 
-        Button plus = (Button) listItemView.findViewById(R.id.plus_btn);
-        plus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                quantity = quantity + 1;
-
-            }
-        });
-
-        Button minus = (Button) listItemView.findViewById(R.id.minus_btn);
-        minus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if (quantity > 0) quantity = quantity + 1;
-                else quantity = quantity;
-
-            }
-        });
-
-        hold = currenttradfood.getItemquantity();
-        value = Integer.parseInt(hold);
-        quantity = value + quantity;
 
         TextView quantityTextView = (TextView) listItemView.findViewById(R.id.quantity);
         quantityTextView.setText(String.valueOf(quantity));
