@@ -15,9 +15,6 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by HomePC on 1/9/2018.
- */
 
 public class ItalianAdapter extends ArrayAdapter<ItalianClass> {
     int quantity = 0; int i = 0;
@@ -105,9 +102,6 @@ public class ItalianAdapter extends ArrayAdapter<ItalianClass> {
                         else
                             Toast.makeText(getContext(), "Please, Try again", Toast.LENGTH_SHORT).show();
 
-
-
-
                     }
                     if (pos == 1) {
                         boolean isinserted =  mydb.Add_to_Cart("Lasagna",String.valueOf(quantity),String.valueOf(650*quantity));
@@ -124,9 +118,6 @@ public class ItalianAdapter extends ArrayAdapter<ItalianClass> {
                         else
                             Toast.makeText(getContext(), "Please, Try again", Toast.LENGTH_SHORT).show();
 
-
-
-
                     }
                     if (pos == 2) {
                         boolean isinserted = mydb.Add_to_Cart("Italian Pizza",String.valueOf(quantity),String.valueOf(1250*quantity));
@@ -142,10 +133,6 @@ public class ItalianAdapter extends ArrayAdapter<ItalianClass> {
                         }
                         else
                             Toast.makeText(getContext(), "Please, Try again", Toast.LENGTH_SHORT).show();
-
-
-
-
 
                     }
                     if (pos == 3) {
@@ -173,10 +160,6 @@ public class ItalianAdapter extends ArrayAdapter<ItalianClass> {
                     Toast.makeText(getContext(), "" + order_details[j] + "\n" + order_details[j+1] + "\n"+ order_details[j+2] + "\n" + order_details[j+3], Toast.LENGTH_LONG).show();
 
                 }
-
-
-
-
 
             }
 
