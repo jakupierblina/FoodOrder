@@ -34,11 +34,8 @@ public class MainActivity extends AppCompatActivity
 
         Intent i = getIntent();
         String save1 = i.getStringExtra("Name_marker");
-       // String save2 = i.getStringExtra("pass_marker");
 
-
-            Toast.makeText(getApplicationContext(),"Hello " + save1+ " , Welcome to Eat It Restaurant",Toast.LENGTH_SHORT).show();
-         //   Toast.makeText(getApplicationContext(),save2,Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Hello " + save1+ " , Welcome to FoodOrder App",Toast.LENGTH_SHORT).show();
 
 
         //DEFAULT FRAGMENT
@@ -53,18 +50,6 @@ public class MainActivity extends AppCompatActivity
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
-
-
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -188,7 +173,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
 
                 mydb.delete_all();
-                Toast.makeText(getApplicationContext(),"Hope you like our service, Have a good day !!!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Thank you for visiting us! Have a good day!",Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(getApplicationContext(),LoginOptionsPage.class);
                 startActivity(intent);
@@ -198,7 +183,7 @@ public class MainActivity extends AppCompatActivity
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"So you don't want to, Logout !!!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Thank you!",Toast.LENGTH_SHORT).show();
                 builder.dismiss();
             }
         });
