@@ -1,9 +1,5 @@
 package com.example.homepc.restauranteatitapp;
 
-/**
- * Created by HomePC on 1/16/2018.
- */
-
 public class OrderClass {
     private String Itemid;
     private String Itemname;
@@ -16,7 +12,6 @@ public class OrderClass {
         Itemname = iName;
         Itemquantity = iQuantity;
         Itemprice = iPrice;
-
     }
 
 
@@ -31,6 +26,5 @@ public class OrderClass {
     public String getItemPrice() {return Itemprice;}
 
     public String getItemquantity() {return Itemquantity;}
-
 
 }
