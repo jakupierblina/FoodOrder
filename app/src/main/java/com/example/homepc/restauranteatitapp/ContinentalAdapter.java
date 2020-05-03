@@ -16,11 +16,8 @@ import java.util.ArrayList;
 public class ContinentalAdapter extends ArrayAdapter<ContinentalClass> {
 
     int Contiquantity = 0; int i = 0;
-    int Contivalue = 0; String Contihold = "";
-    int Contipos = 0, Conticounter = 1;
-    String [] Contiorder_details = new String[1000];
+    int Contipos = 0;
     DatabaseHelper mydb;
-    String Number,Name,Quantity,Price = "";
 
     public ContinentalAdapter(Activity context, ArrayList<ContinentalClass> conti_food) {
         super(context, 0, conti_food);
@@ -49,29 +46,6 @@ public class ContinentalAdapter extends ArrayAdapter<ContinentalClass> {
         priceTextView.setText("Price " + currentcontifood.getItemPrice() );
 
 
-        Button plus = (Button) listItemView.findViewById(R.id.plus_btn);
-        plus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Contiquantity = Contiquantity + 1;
-
-            }
-        });
-
-        Button minus = (Button) listItemView.findViewById(R.id.minus_btn);
-        minus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if (Contiquantity > 0) Contiquantity = Contiquantity + 1;
-                else Contiquantity = Contiquantity;
-
-            }
-        });
-
-        Contihold = currentcontifood.getItemquantity();
-        Contivalue = Integer.parseInt(Contihold);
-        Contiquantity = Contivalue + Contiquantity;
 
         TextView quantityTextView = (TextView) listItemView.findViewById(R.id.quantity);
         quantityTextView.setText(String.valueOf(Contiquantity));
