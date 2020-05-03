@@ -1,0 +1,1 @@
+[{"outputType":{"type":"INSTANT_APP_MANIFEST"},"apkData":{"type":"MAIN","splits":[],"versionCode":1,"versionName":"1.0","enabled":true,"outputFile":"app-lintOptions-unsigned.apk","fullName":"lintOptions","baseName":"lintOptions","dirName":""},"path":"AndroidManifest.xml","properties":{"packageId":"com.example.homepc.restauranteatitapp","split":"","minSdkVersion":"15"}}]

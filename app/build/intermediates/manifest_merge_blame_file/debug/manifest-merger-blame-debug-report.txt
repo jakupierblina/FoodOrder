@@ -1,0 +1,77 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.homepc.restauranteatitapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="26" />
+9-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:5:5-27:19
+12        android:allowBackup="true"
+12-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:6:9-35
+13        android:debuggable="true"
+14        android:icon="@mipmap/logo_launcher_foreground"
+14-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:7:9-56
+15        android:label="@string/app_name"
+15-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:8:9-41
+16        android:roundIcon="@mipmap/logo_launcher_round"
+16-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:9:9-56
+17        android:supportsRtl="true"
+17-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:10:9-35
+18        android:theme="@style/AppTheme" >
+18-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:11:9-40
+19        <activity android:name="com.example.homepc.restauranteatitapp.Splash" >
+19-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:12:9-18:20
+19-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:12:19-41
+20            <intent-filter>
+20-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:13:13-17:29
+21                <action android:name="android.intent.action.MAIN" />
+21-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:14:17-69
+21-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:14:25-66
+22
+23                <category android:name="android.intent.category.LAUNCHER" />
+23-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:16:17-77
+23-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:16:27-74
+24            </intent-filter>
+25        </activity>
+26        <activity android:name="com.example.homepc.restauranteatitapp.LoginOptionsPage" />
+26-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:19:9-54
+26-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:19:19-51
+27        <activity android:name="com.example.homepc.restauranteatitapp.SignInPage" />
+27-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:20:9-48
+27-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:20:19-45
+28        <activity android:name="com.example.homepc.restauranteatitapp.SignUpPage" />
+28-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:21:9-48
+28-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:21:19-45
+29        <activity
+29-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:22:9-25:47
+30            android:name="com.example.homepc.restauranteatitapp.MainActivity"
+30-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:23:13-41
+31            android:label="@string/title_activity_main"
+31-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:24:13-56
+32            android:theme="@style/AppTheme" />
+32-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:25:13-44
+33        <activity android:name="com.example.homepc.restauranteatitapp.OrderPage" />
+33-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:26:9-56
+33-->I:\Class\Semester 8\Tools of Software\self\final\FoodOrder\Food-Ordering-App-master\RestaurantEatItApp\app\src\main\AndroidManifest.xml:26:19-44
+34
+35        <meta-data
+35-->[com.android.support:design:26.1.0] C:\Users\zafar\.gradle\caches\transforms-2\files-2.1\1c57cb40c5ca88fea033fdfa318e24f2\design-26.1.0\AndroidManifest.xml:26:9-28:38
+36            android:name="android.support.VERSION"
+36-->[com.android.support:design:26.1.0] C:\Users\zafar\.gradle\caches\transforms-2\files-2.1\1c57cb40c5ca88fea033fdfa318e24f2\design-26.1.0\AndroidManifest.xml:27:13-51
+37            android:value="26.1.0" />
+37-->[com.android.support:design:26.1.0] C:\Users\zafar\.gradle\caches\transforms-2\files-2.1\1c57cb40c5ca88fea033fdfa318e24f2\design-26.1.0\AndroidManifest.xml:28:13-35
+38        <meta-data
+38-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\zafar\.gradle\caches\transforms-2\files-2.1\c367f147b1824fae601e3784b54956a7\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
+39            android:name="android.arch.lifecycle.VERSION"
+39-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\zafar\.gradle\caches\transforms-2\files-2.1\c367f147b1824fae601e3784b54956a7\runtime-1.0.0\AndroidManifest.xml:26:13-58
+40            android:value="27.0.0-SNAPSHOT" />
+40-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\zafar\.gradle\caches\transforms-2\files-2.1\c367f147b1824fae601e3784b54956a7\runtime-1.0.0\AndroidManifest.xml:27:13-44
+41    </application>
+42
+43</manifest>

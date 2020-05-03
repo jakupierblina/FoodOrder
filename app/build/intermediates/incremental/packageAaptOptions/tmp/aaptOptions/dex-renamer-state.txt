@@ -1,0 +1,4 @@
+#Sun May 03 00:51:34 CEST 2020
+base.0=I\:\\Class\\Semester 8\\Tools of Software\\self\\final\\FoodOrder\\Food-Ordering-App-master\\RestaurantEatItApp\\app\\build\\intermediates\\dex\\aaptOptions\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

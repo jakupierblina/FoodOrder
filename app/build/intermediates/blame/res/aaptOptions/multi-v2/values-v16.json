@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "I:\\Class\\Semester 8\\Tools of Software\\self\\final\\FoodOrder\\Food-Ordering-App-master\\RestaurantEatItApp\\app\\build\\intermediates\\incremental\\mergeAaptOptionsResources\\merged.dir\\values-v16\\values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\zafar\\.gradle\\caches\\transforms-2\\files-2.1\\79a88eb676c25e04a79fe5c11e60bef7\\appcompat-v7-26.1.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\zafar\\.gradle\\caches\\transforms-2\\files-2.1\\d8311e6e22bc6e665efa098e8baa52d3\\support-compat-26.1.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}
