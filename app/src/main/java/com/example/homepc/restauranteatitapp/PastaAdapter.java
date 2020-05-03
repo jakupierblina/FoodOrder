@@ -12,9 +12,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-/**
- * Created by HomePC on 1/9/2018.
- */
 
 public class PastaAdapter extends ArrayAdapter<PastaClass> {
     int quantity = 0; int i = 0;
@@ -25,8 +22,8 @@ public class PastaAdapter extends ArrayAdapter<PastaClass> {
     String Number,Name,Quantity,Price = "";
 
 
-    public PastaAdapter(Activity context, ArrayList<PastaClass> sea_food) {
-        super(context, 0, sea_food);
+    public PastaAdapter(Activity context, ArrayList<PastaClass> pasta_array) {
+        super(context, 0, pasta_array);
         this.mydb = new DatabaseHelper(context.getApplicationContext());
 
     }
@@ -87,95 +84,6 @@ public class PastaAdapter extends ArrayAdapter<PastaClass> {
             public void onClick(View view) {
                 //cart_btn.setEnabled(false);
                 pos = (Integer)view.getTag();
-                if(quantity != 0) { //if quan < 0 or equals to 0
-                    if (pos == 0) {
-                        boolean isinserted = mydb.Add_to_Cart("Finger Fish",String.valueOf(quantity),String.valueOf(600*quantity));
-                        if (isinserted)
-                        {
-                            int price = 1; //price * quantity = total price
-                            order_details[i] = "Id " + counter + " Finger Fish Price Rs " + 600 * quantity + " ";
-                            counter++;  //var use for no of items order
-                            i++;  //var uses to store data in array */
-                            quantity = 0;  //holds the value for each item quantity*s/
-                            Toast.makeText(getContext(), "Order Added Successfully !", Toast.LENGTH_SHORT).show();
-                        }
-                        else
-                            Toast.makeText(getContext(), "Please, Try again", Toast.LENGTH_SHORT).show();
-
-
-
-
-                    }
-                    if (pos == 1) {
-                        boolean isinserted =  mydb.Add_to_Cart("Shrimp",String.valueOf(quantity),String.valueOf(900*quantity));
-                        if (isinserted)
-                        {
-                            int price = 1;
-                            order_details[i] = "Id " + counter + " Shrimp Price Rs " + 900 * quantity + " ";
-                            counter++;
-                            i++;
-                            quantity = 0;
-                            Toast.makeText(getContext(), "Order Added Successfully !", Toast.LENGTH_SHORT).show();
-
-                        }
-                        else
-                            Toast.makeText(getContext(), "Please, Try again", Toast.LENGTH_SHORT).show();
-
-
-
-
-                    }
-                    if (pos == 2) {
-                        boolean isinserted = mydb.Add_to_Cart("Fried Fish",String.valueOf(quantity),String.valueOf(650*quantity));
-                        if (isinserted)
-                        {
-                            int price = 1;
-                            order_details[i] = "Id : " + counter + " Fried Fish Price Rs " + 650 * quantity + " ";
-                            counter++;
-                            i++;
-                            quantity = 0;
-                            Toast.makeText(getContext(), "Order Added Successfully !", Toast.LENGTH_SHORT).show();
-
-                        }
-                        else
-                            Toast.makeText(getContext(), "Please, Try again", Toast.LENGTH_SHORT).show();
-
-
-
-
-
-                    }
-                    if (pos == 3) {
-
-                        boolean isinserted = mydb.Add_to_Cart("Prawn Soup",String.valueOf(quantity),String.valueOf(450*quantity));
-                        if (isinserted)
-                        {
-                            int price = 1;
-                            order_details[i] = "Id " + counter + " Prawn Soup Price Rs " + 450 * quantity + " ";
-                            counter++;
-                            i++;
-                            quantity = 0;
-                            Toast.makeText(getContext(), "Order Added Successfully !", Toast.LENGTH_SHORT).show();
-
-                        }
-                        else
-                            Toast.makeText(getContext(), "Please, Try again", Toast.LENGTH_SHORT).show();
-
-
-
-
-
-                    }
-
-
-                } else {  Toast.makeText(getContext(), "Quantity value can't be zero or lesser!!!", Toast.LENGTH_SHORT).show();
-
-                    int j = 0;
-                    Toast.makeText(getContext(), "" + order_details[j] + "\n" + order_details[j+1] + "\n"+ order_details[j+2] + "\n" + order_details[j+3], Toast.LENGTH_LONG).show();
-
-                }
-
-
 
 
             }
