@@ -28,39 +28,18 @@
         android:textSize="15sp"
         />
 
-    <Button
-        android:id="@+id/minus_btn"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:text="-"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="180dp"
-        android:clickable="true"
-        android:background="@drawable/drawables"
 
-        />
-
-    <TextView
+    <EditText
         android:id="@+id/quantity"
-        android:layout_width="80dp"
+        android:inputType="number"
+        android:hint="How many orders"
+        android:layout_width="150dp"
         android:layout_height="48dp"
         android:layout_marginTop="110dp"
-        android:layout_marginLeft="235dp"
-        android:textSize="15sp"
+        android:layout_marginLeft="180dp"
+        android:textSize="15sp" />
 
-        />
 
-    <Button
-        android:id="@+id/plus_btn"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:text="+"
-        android:layout_marginTop="100dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
-        android:clickable="true"
-        android:background="@drawable/drawables"
-        />
     <Button
         android:id="@+id/cart_btn"
         android:layout_width="wrap_content"
@@ -72,9 +51,5 @@
         android:background="@drawable/drawables"
         android:textAllCaps="false"
         android:textSize="15sp"/>
-
-    <!-- android:background="#39796b"-->
-        <!--android:textColor="#FFFFFF"-->
-
 
 </RelativeLayout>
