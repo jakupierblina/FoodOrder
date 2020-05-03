@@ -12,10 +12,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-/**
- * Created by HomePC on 1/16/2018.
- */
-
 public class OrderAdapter extends ArrayAdapter<OrderClass> {
 
     DatabaseHelper mydb;
